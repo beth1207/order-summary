@@ -1,0 +1,125 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+   
+}
+.card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    border-radius: 10px;
+    background-color: var(--Very-pale-blue);
+    
+}
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.title{
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+}
+.paragraph{
+    text-align: center;
+    font-size: smaller;
+    color: var(--Desaturated-blue);
+    margin-top: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: rgb(235, 252, 253);
+    width: 90%;
+    align-items: center;
+    border-radius: 5px;
+    padding: .8em;
+    margin-bottom: 1em;
+    margin-left: 13px;
+}
+.period .plan{
+    display: flex;
+    font-size: medium;
+    color: black;
+    
+}
+.period{
+    
+    font-size: smaller;
+    color: var(--Desaturated-blue);
+}
+.svg{
+    display: block;
+    width: 35px;
+}
+.change{
+    padding: 10px;
+    font-size: 15px;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+}
+.change:hover{
+    cursor: grab;
+}
+.pay-btn{
+    background-color: hsl(239, 82%, 56%);
+    color: white;
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(143, 143, 223);
+    margin-bottom: 1.5em;
+    margin-left: 13px;
+    border: none;
+
+}
+.pay-btn:hover{
+    cursor: grab;
+}
+.cancel-btn{
+    background-color: var(--Very-pale-blue);
+    color: var(--Desaturated-blue);
+    width: 90%;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    margin-left: 13px;
+    border: none;
+}
+.cancel-btn:hover{
+    cursor: grab;
+}
+@media (min-width: 375px) {
+    
+}
